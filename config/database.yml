@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: time_buddy_production
-  username: time_buddy
+  database: time_buddy
+  username: deploy
   password: <%= ENV['TIME_BUDDY_DATABASE_PASSWORD'] %>
