@@ -1,24 +1,34 @@
-# README
+## Time Buddy
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Time buddy is a productivy app. 
 
-Things you may want to cover:
+* The main goal of Time buddy is to help save people time in there busy lives.
 
-* Ruby version
+- TODO tags.
 
+- TODO Image of the landing page.
+Table of content
+
+Prerequisites
+* node
+* yarn
+
+Instalation
+* Ruby version 2.7.1
 * System dependencies
-
 * Configuration
 
-* Database creation
+Database
+* Create user accounts
+* Connect to database
+* Create databases
+* Migrate
 
-* Database initialization
-
+Testing
 * How to run the test suite
 
+Services
 * Services (job queues, cache servers, search engines, etc.)
 
+Deployment
 * Deployment instructions
-
-* ...
