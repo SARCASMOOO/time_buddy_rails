@@ -1,5 +1,6 @@
 require 'rails_helper'
 
+#TODO: FIgure out how to test devise and do the wireframe before writing these tests.
 # Change this ArticlesController to your project
 RSpec.describe PagesController, type: :controller do
   describe "GET #index" do
