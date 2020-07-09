@@ -10,7 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_24_021941) do
+ActiveRecord::Schema.define(version: 2020_07_02_231507) do
+
+  create_table "courses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "start_time"
+    t.datetime "end_time"
+  end
+
+  create_table "courses_schedules", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "schedule_id", null: false
+    t.bigint "course_id", null: false
+    t.index ["course_id", "schedule_id"], name: "index_courses_schedules_on_course_id_and_schedule_id"
+    t.index ["schedule_id", "course_id"], name: "index_courses_schedules_on_schedule_id_and_course_id"
+  end
+
+  create_table "schedules", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_schedules_on_user_id"
+  end
 
   create_table "schools", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.text "name"
@@ -19,6 +43,8 @@ ActiveRecord::Schema.define(version: 2020_06_24_021941) do
     t.float "longitude"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "course_id"
+    t.index ["course_id"], name: "index_schools_on_course_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -33,4 +59,6 @@ ActiveRecord::Schema.define(version: 2020_06_24_021941) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "schedules", "users"
+  add_foreign_key "schools", "courses"
 end
