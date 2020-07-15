@@ -18,7 +18,8 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "semantic-ui-sass": "^2.4.2",
-    "turbolinks": "^5.2.0"
+    "turbolinks": "^5.2.0",
+    "semantic-ui-react": "0.88.2"
   },
   "version": "0.1.0",
   "devDependencies": {
