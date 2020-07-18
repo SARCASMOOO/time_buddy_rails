@@ -1,13 +1,17 @@
-import React, {Component} from 'react'
+import React from 'react';
+import { Table, Label, Menu, Icon } from "semantic-ui-react";
+import TableHeader from './TableHeader';
+import TableBody from "./TableBody";
+import TableFooter from "./TableFooter";
 
-class TimeTable extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return (<div>
-            <h1>Test</h1>
-        </div>);
-    }
+const TimeTable = () => {
+    return (
+        <Table compact='very' celled padded='very'>
+            <TableHeader />
+            <TableBody />
+            <TableFooter />
+        </Table>
+    );
 }
+
+export default TimeTable

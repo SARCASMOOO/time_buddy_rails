@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
 import SelectSchool from "./SelectSchool";
+import TimeTable from "./TimeTable";
+import {Grid} from "semantic-ui-react";
+import CourseList from "./CourseList";
 
 class TimeTableApp extends Component {
     constructor(props) {
@@ -10,19 +13,38 @@ class TimeTableApp extends Component {
     }
 
     render() {
-        let view = null;
+        let view;
+        const rowStyle = {
+            height: '20%',
+        };
 
-        if(this.state.school) {
+        if (this.state.school) {
             view = (
-                <h1>School</h1>
+                <Grid.Row>
+                    <Grid.Column width={12}>
+                        <TimeTable/>
+                    </Grid.Column>
+                    <Grid.Column  width={4}>
+                        <CourseList />
+                    </Grid.Column>
+                </Grid.Row>
             );
         } else {
             view = (
-                <SelectSchool />
+                <Grid.Row>
+                    <SelectSchool
+                        onclick={() => {
+                            this.setState({school: true});
+                        }}/>
+                </Grid.Row>
             );
         }
 
-        return view;
+        return (
+            <Grid padded style={rowStyle}>
+                {view}
+            </Grid>
+        );
     }
 }
 

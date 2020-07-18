@@ -18,8 +18,7 @@ function Footer(){
         justifyContent: 'flex-start',
     }
         return (
-            <Form widths='equal' stretch inline>
-                <Form style={style}>
+            <Form widths='equal' style={style}>
                     <Form.Group style={styleGroup}>
                         <Header as='h3'>Connect with us!</Header>
                         <p>
@@ -58,7 +57,6 @@ function Footer(){
                     <Form.Group style={styleGroupCopyRight}>
                         <p>Timebuddy©</p>
                     </Form.Group>
-                </Form>
             </Form>
         );
 }

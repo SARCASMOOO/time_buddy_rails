@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
       <App>
           <Layout>
-              {/*<TimeTableApp />*/}
-              <Main></Main>
+              <TimeTableApp />
+              {/*<Main></Main>*/}
           </Layout>
       </App>,
     document.body.appendChild(document.createElement('div')),
