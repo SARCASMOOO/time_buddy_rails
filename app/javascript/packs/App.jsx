@@ -19,10 +19,7 @@ class App extends React.Component {
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
       <App>
-          <Layout>
-              {/*<TimeTableApp />*/}
-              <Main></Main>
-          </Layout>
+          <Layout />
       </App>,
     document.body.appendChild(document.createElement('div')),
   )
