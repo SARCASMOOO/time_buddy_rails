@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Layout from './components/Layout/Layout';
-import TimeTableApp from './containers/TimeTableApp';
+import LandingPage from './components/Landing/Landing';
 
 const Landing = props => {
     return (
         <Layout layoutName='timeApp'>
             <main>
-                <TimeTableApp />
+                <LandingPage />
             </main>
         </Layout>
     );
