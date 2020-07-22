@@ -7,6 +7,7 @@ function Footer(){
         justifyContent: 'space-around',
     }
 
+
     const styleGroup = {
         display: 'flex',
         flexDirection: 'column',

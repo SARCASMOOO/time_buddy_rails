@@ -11,6 +11,7 @@ class ProfileSideBar extends Component {
         this.setState({ visible: !this.state.visible });
     }
 
+
     toggleVisibility = () => this.setState({ visible: !this.state.visible })
 
     render() {

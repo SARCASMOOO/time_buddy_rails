@@ -10,6 +10,7 @@ class Landing extends React.Component {
             display: 'flex',
         };
 
+
         return (
                 <Grid columns={2} container>
 

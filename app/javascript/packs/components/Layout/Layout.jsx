@@ -6,6 +6,7 @@ import ProfileSideBar from "./Sections/ProfileSideBar";
 const layout = props => {
     let view;
 
+
     switch (props.layoutName) {
         case 'landing':
             view = (

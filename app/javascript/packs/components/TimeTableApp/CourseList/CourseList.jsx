@@ -10,6 +10,7 @@ class CourseList extends Component {
         }
     }
 
+
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
     render(props) {

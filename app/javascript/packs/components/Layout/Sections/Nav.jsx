@@ -10,7 +10,6 @@ export default class Nav extends Component {
         this.state = {};
     }
 
-
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
     render() {
