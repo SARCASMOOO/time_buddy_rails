@@ -4,7 +4,6 @@ import Layout from './components/Layout/Layout';
 import TimeTableApp from './containers/TimeTableApp';
 import LandingPage from './components/Landing/Landing';
 import {Container} from 'semantic-ui-react';
-
 const App = props => {
     return (
         <Layout layoutName='timeApp'>
