@@ -20,12 +20,11 @@ export default class Nav extends Component {
         //const items = ["apps", "feedback", "contact", "right", "instagram"];
         //const itemsList = items.map(item => <MenuItem key={""}></MenuItem>);
 
-
         return (
             <div style={{marginTop: '-30px'}}>
                 <Grid columns='equal'>
                     <Grid.Column>
-                        <Menu inverted>
+                        <Menu inverted className='DirtyBlue'>
                             <Menu.Item
                                 name='apps'
                                 active={activeItem === 'apps'}

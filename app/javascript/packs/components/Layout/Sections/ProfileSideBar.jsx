@@ -17,7 +17,7 @@ class ProfileSideBar extends Component {
         const { visible } = this.state
         return (
             <div>
-                <Button onClick={this.toggleVisibility}>Toggle Visibility</Button>
+                {/*<Button onClick={this.toggleVisibility}>Toggle Visibility</Button>*/}
                 <Sidebar.Pushable as={Segment}>
                     <Sidebar as={Menu} animation='scale down' width='wide' visible={visible} icon='labeled' vertical inverted animation={'overlay'}
                              direction={'right'}>

@@ -17,8 +17,13 @@ function Footer(){
         flexDirection: 'column-reverse',
         justifyContent: 'flex-start',
     }
+
+    const formStyle = {
+        paddingBottom: '20px'
+    }
         return (
-            <Form widths='equal' stretch inline>
+            <footer className='DirtyBlue'>
+            <Form widths='equal' stretch inline style={formStyle}>
                 <Form style={style}>
                     <Form.Group style={styleGroup}>
                         <Header as='h3'>Connect with us!</Header>
@@ -60,6 +65,7 @@ function Footer(){
                     </Form.Group>
                 </Form>
             </Form>
+            </footer>
         );
 }
 

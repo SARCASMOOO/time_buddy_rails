@@ -9,7 +9,7 @@ class Apps extends React.Component {
                 <Card.Content header='School Timetable' />
                 <Card.Content description={"Plan your semester with our timetable app. Select your school and manage multiple time sheets all in one place."} />
                 <Card.Content extra>
-                    <Button primary floated={'right'}>Start</Button>
+                    <Button primary floated='right'>Start</Button>
                 </Card.Content>
             </Card>
             </div>
