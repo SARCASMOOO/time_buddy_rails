@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Form } from 'semantic-ui-react'
 
+
 const options = [
     { key: 'fr', text: 'Feature Request', value: 'feature' },
     { key: 'i', text: 'Issue', value: 'issue' },

@@ -1,14 +1,15 @@
 import React from 'react'
 import {Container, Grid} from 'semantic-ui-react'
-import Introduction from './LandingPage/Introduction'
-import Apps from './LandingPage/Apps'
-import Feedback from './LandingPage/Feedback'
+import Introduction from './Sections/Introduction'
+import Apps from './Sections/Apps'
+import Feedback from './Sections/Feedback'
 
-class Main extends React.Component {
+class Landing extends React.Component {
     render() {
         const appsStyle = {
             display: 'flex',
         };
+
 
         return (
                 <Grid columns={2} container>
@@ -39,4 +40,4 @@ class Main extends React.Component {
     }
 }
 
-export default Main
+export default Landing
