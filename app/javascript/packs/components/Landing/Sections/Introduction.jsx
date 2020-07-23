@@ -9,11 +9,8 @@ const description = `Timebuddy is a productivity site which provides you tools t
 const items = [
     {
         childKey: 0,
-        image: '/images/wireframe/image.png',
-        header: 'Header',
-        description: description,
-        meta: 'Metadata',
-        extra: 'Extra',
+        header: 'Welcome to Time Buddy!',
+        description: description
     },
 ]
 

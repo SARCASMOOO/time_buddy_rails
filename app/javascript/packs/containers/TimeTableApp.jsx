@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 // import SelectSchool from "./SelectSchool";
 import TimeTable from "../components/TimeTableApp/TimeTable/TimeTable";
-import {Grid} from "semantic-ui-react";
+import {Grid, Button} from "semantic-ui-react";
 import CourseList from "../components/TimeTableApp/CourseList/CourseList";
 
 class TimeTableApp extends Component {
@@ -18,6 +18,11 @@ class TimeTableApp extends Component {
                         <Grid.Column  width={4}>
                             <h1>Courses</h1>
                             <CourseList courses={['course1', 'course2', 'course3', 'course4']}/>
+                            <Button primary onClick={ () => {
+                                const url = window.location.origin + '/landing/';
+                                window.location.replace(url);
+                            }
+                            }>Back</Button>
                         </Grid.Column>
                     </Grid.Row>
                 ),
